@@ -11,7 +11,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    public $timestamps = false;
+//    public $timestamps = false;
 
     protected $fillable = [
         'name',
@@ -22,8 +22,8 @@ class User extends Authenticatable
     ];
 
     protected $hidden = [
-        'password',
-        'remember_token',
+        'created_at',
+        'updated_at'
     ];
 
     public function timeLogs(){
