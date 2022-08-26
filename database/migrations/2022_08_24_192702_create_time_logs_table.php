@@ -20,8 +20,8 @@ return new class extends Migration
                     ->constrained()
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
-            $table->dateTime('arrivalTime');
-            $table->dateTime('exitTime');
+            $table->dateTime('timeLog');
+            $table->string('tipo');
         });
     }
 

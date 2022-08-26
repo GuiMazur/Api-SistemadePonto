@@ -9,5 +9,13 @@ class TimeLog extends Model
 {
     use HasFactory;
 
-    public $fillable
+    public $timestamps = false;
+
+    public $fillable = [
+        "timeLog",
+        "tipo",
+        "user_id"
+    ];
+
+
 }
